@@ -20,7 +20,7 @@
 
 - (void) setFlipCount:(int)flipCount{
     _flipCount=flipCount;
-    self.flipsLabel.text=[NSString stringWithFormat:@"Flips: %d",self.flipCount];
+    self.flipsLabel.text=[NSString stringWithFormat:@"Vueltas: %d",self.flipCount];
     
 }
 
@@ -37,7 +37,7 @@
             self.flipCount++;
             if (!self.deck)
             self.deck=[[PlayingCardDeck alloc]init];
-            
+    
             [sender setTitle:self.deck.drawRandomCard.contents forState:(UIControlStateSelected)];
 
             sender.selected=YES;
